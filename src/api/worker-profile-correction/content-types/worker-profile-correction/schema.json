@@ -24,6 +24,14 @@
       "type": "string",
       "required": true
     },
+    "userRole": {
+      "type": "enumeration",
+      "enum": [
+        "Worker",
+        "Supervisor"
+      ],
+      "default": "Worker"
+    },
     "project": {
       "type": "string"
     },
