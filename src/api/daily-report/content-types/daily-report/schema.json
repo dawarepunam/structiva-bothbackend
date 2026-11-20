@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "daily_reports",
+  "info": {
+    "singularName": "daily-report",
+    "pluralName": "daily-reports",
+    "displayName": "Daily Progress Report (DPR)",
+    "description": "Daily site shift log including workforce count, machinery deployed, work executed, and diesel consumed"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reportDate": {
+      "type": "date",
+      "required": true
+    },
+    "project": {
+      "type": "string",
+      "required": true
+    },
+    "site": {
+      "type": "string"
+    },
+    "shift": {
+      "type": "enumeration",
+      "enum": ["Shift-1 (Day)", "Shift-2 (Night)"],
+      "default": "Shift-1 (Day)"
+    },
+    "workExecuted": {
+      "type": "text",
+      "required": true
+    },
+    "labourCount": {
+      "type": "integer",
+      "default": 0
+    },
+    "machineryCount": {
+      "type": "integer",
+      "default": 0
+    },
+    "dieselConsumedLitres": {
+      "type": "decimal",
+      "default": 0
+    },
+    "submittedBy": {
+      "type": "string"
+    },
+    "approvalStatus": {
+      "type": "enumeration",
+      "enum": ["Approved", "Under Review", "Draft", "Rejected"],
+      "default": "Under Review"
+    },
+    "remarks": {
+      "type": "text"
+    }
+  }
+}

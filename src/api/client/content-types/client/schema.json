@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "singularName": "client",
+    "pluralName": "clients",
+    "displayName": "Corporate Client",
+    "description": "Verified infrastructure and EPC partners"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "sector": {
+      "type": "enumeration",
+      "enum": [
+        "Solar EPC",
+        "Water Infrastructure",
+        "Industrial & EPC",
+        "Commercial Infrastructure"
+      ],
+      "required": true
+    },
+    "logo": {
+      "type": "string"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": true
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

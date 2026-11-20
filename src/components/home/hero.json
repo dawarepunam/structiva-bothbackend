@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_home_heroes",
+  "info": {
+    "displayName": "Hero Section",
+    "icon": "picture",
+    "description": "Hero section banner and messaging"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "required": true,
+      "default": "Engineering with Precision. Execution with Responsibility."
+    },
+    "subheadline": {
+      "type": "text",
+      "required": true
+    },
+    "ctaText": {
+      "type": "string",
+      "default": "Explore Our Services"
+    },
+    "secondaryCtaText": {
+      "type": "string",
+      "default": "Discuss Your Project"
+    },
+    "backgroundImage": {
+      "type": "string",
+      "default": "/images/commercial_tower.jpg"
+    }
+  }
+}

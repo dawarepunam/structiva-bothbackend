@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_home_homes",
+  "info": {
+    "displayName": "Home",
+    "icon": "house",
+    "description": "Main reusable Home component composing nested homepage sections"
+  },
+  "options": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.hero"
+    },
+    "about": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.about"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.cta"
+    },
+    "contact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.contact"
+    }
+  }
+}

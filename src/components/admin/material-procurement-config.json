@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_admin_material_procurement_configs",
+  "info": {
+    "displayName": "Material Procurement Configuration",
+    "description": "Admin configuration for materials indent and inventory",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "enableLowStockAlerts": {
+      "type": "boolean",
+      "default": true
+    },
+    "defaultIndentLeadTimeDays": {
+      "type": "integer",
+      "default": 3
+    },
+    "requireThreeVendorQuotesAbove": {
+      "type": "decimal",
+      "default": 50000.0
+    }
+  }
+}

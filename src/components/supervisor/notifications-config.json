@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_supervisor_notifications_configs",
+  "info": {
+    "displayName": "Supervisor Notifications Configuration",
+    "description": "SMS and in-app alerts for shift events and approval decisions",
+    "icon": "bell"
+  },
+  "options": {},
+  "attributes": {
+    "enableSmsAlerts": {
+      "type": "boolean",
+      "default": false
+    },
+    "enablePushNotifications": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_admin_fuel_management_configs",
+  "info": {
+    "displayName": "Fuel Management Configuration",
+    "description": "Admin configuration for fuel logs and procurement",
+    "icon": "database"
+  },
+  "options": {},
+  "attributes": {
+    "standardDieselRate": {
+      "type": "decimal",
+      "default": 92.5
+    },
+    "maxFuelDispensePerLogLitres": {
+      "type": "decimal",
+      "default": 300.0
+    },
+    "requireReceiptAttachment": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

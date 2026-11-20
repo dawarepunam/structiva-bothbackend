@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_admin_reports_configs",
+  "info": {
+    "displayName": "Reports Configuration",
+    "description": "Configuration for analytical reports and exports",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "enableAutomatedWeeklyDigest": {
+      "type": "boolean",
+      "default": true
+    },
+    "exportFormatsAllowed": {
+      "type": "string",
+      "default": "CSV, XLSX, PDF"
+    }
+  }
+}

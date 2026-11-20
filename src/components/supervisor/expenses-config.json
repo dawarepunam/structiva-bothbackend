@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_supervisor_expenses_configs",
+  "info": {
+    "displayName": "Supervisor Expenses Configuration",
+    "description": "Field petty cash submission constraints",
+    "icon": "shoppingCart"
+  },
+  "options": {},
+  "attributes": {
+    "dailyVoucherSubmissionLimit": {
+      "type": "decimal",
+      "default": 10000.0
+    },
+    "requireVendorReceiptAttachment": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

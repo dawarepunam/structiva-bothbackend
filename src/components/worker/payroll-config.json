@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_worker_payroll_configs",
+  "info": {
+    "displayName": "Payroll Config",
+    "description": "Base trade wage rates, statutory deductions (PF/ESIC) and disbursal cycles",
+    "icon": "database"
+  },
+  "options": {},
+  "attributes": {
+    "payoutCycle": {
+      "type": "enumeration",
+      "enum": ["Weekly", "Bi-Weekly", "Monthly"],
+      "default": "Monthly"
+    },
+    "pfDeductionPercentage": {
+      "type": "decimal",
+      "default": 12.0
+    },
+    "esicDeductionPercentage": {
+      "type": "decimal",
+      "default": 0.75
+    },
+    "standardWorkDaysPerMonth": {
+      "type": "integer",
+      "default": 26
+    }
+  }
+}

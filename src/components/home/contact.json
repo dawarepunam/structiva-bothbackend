@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_home_contacts",
+  "info": {
+    "displayName": "Contact Section",
+    "icon": "mail",
+    "description": "Company contact coordinates"
+  },
+  "options": {},
+  "attributes": {
+    "phone": {
+      "type": "string",
+      "default": "+91 (020) 4123 8800"
+    },
+    "email": {
+      "type": "string",
+      "default": "corporate@structiva.internal"
+    },
+    "address": {
+      "type": "text",
+      "default": "STRUCTIVA Towers, Plot 42, Kharadi Central Boulevard, Pune, Maharashtra 411014"
+    }
+  }
+}

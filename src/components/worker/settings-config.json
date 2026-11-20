@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_worker_settings_configs",
+  "info": {
+    "displayName": "Settings Config",
+    "description": "Account security, language preference, theme and session settings for worker portal",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "defaultLanguage": {
+      "type": "enumeration",
+      "enum": ["English", "Marathi", "Hindi"],
+      "default": "English"
+    },
+    "enableTwoFactor": {
+      "type": "boolean",
+      "default": false
+    },
+    "sessionTimeoutMinutes": {
+      "type": "integer",
+      "default": 120
+    }
+  }
+}

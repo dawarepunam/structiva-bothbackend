@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "site_pages",
+  "info": {
+    "singularName": "site-page",
+    "pluralName": "site-pages",
+    "displayName": "Site Page",
+    "description": "Enterprise dynamic website pages and page content builder"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "metaDescription": {
+      "type": "text"
+    },
+    "homeContent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.home"
+    },
+    "pageHeroTitle": {
+      "type": "string"
+    },
+    "pageHeroSubtitle": {
+      "type": "text"
+    },
+    "pageBody": {
+      "type": "text"
+    }
+  }
+}

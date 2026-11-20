@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_worker_support_configs",
+  "info": {
+    "displayName": "Support Config",
+    "description": "Grievance redressal, site supervisor hotline and HR assistance contacts",
+    "icon": "phone"
+  },
+  "options": {},
+  "attributes": {
+    "supportPhone": {
+      "type": "string",
+      "default": "+91 (020) 4123 8800"
+    },
+    "supportEmail": {
+      "type": "string",
+      "default": "support@structiva.internal"
+    },
+    "supportHours": {
+      "type": "string",
+      "default": "Monday - Saturday: 08:30 AM – 06:30 PM IST"
+    }
+  }
+}

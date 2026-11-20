@@ -1,0 +1,171 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fleets",
+  "info": {
+    "singularName": "fleet",
+    "pluralName": "fleets",
+    "displayName": "Fleet & Machinery",
+    "description": "Heavy machinery, construction vehicles, telematics and telemetry assets"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "assetId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "registrationNumber": {
+      "type": "string"
+    },
+    "serialNumber": {
+      "type": "string"
+    },
+    "assetClass": {
+      "type": "enumeration",
+      "enum": [
+        "Heavy Machinery",
+        "Commercial Vehicle"
+      ],
+      "default": "Heavy Machinery"
+    },
+    "category": {
+      "type": "string"
+    },
+    "manufacturer": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "manufacturingYear": {
+      "type": "integer"
+    },
+    "ownershipType": {
+      "type": "enumeration",
+      "enum": [
+        "Company Owned",
+        "Rented / Hired"
+      ],
+      "default": "Company Owned"
+    },
+    "rentalVendor": {
+      "type": "string"
+    },
+    "rentalRatePerDay": {
+      "type": "decimal"
+    },
+    "currentStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Operational (On Site)",
+        "Under Maintenance",
+        "Standby (Yard)",
+        "Breakdown Alert"
+      ],
+      "default": "Operational (On Site)"
+    },
+    "currentProject": {
+      "type": "string"
+    },
+    "assignedOperator": {
+      "type": "string"
+    },
+    "operatorPhone": {
+      "type": "string"
+    },
+    "operatorLicence": {
+      "type": "string"
+    },
+    "meterUnit": {
+      "type": "enumeration",
+      "enum": [
+        "Hours",
+        "Kilometres"
+      ],
+      "default": "Hours"
+    },
+    "operatingHoursOrKm": {
+      "type": "decimal",
+      "default": 0
+    },
+    "serviceDueAtHoursOrKm": {
+      "type": "decimal",
+      "default": 0
+    },
+    "telematicsStatus": {
+      "type": "string",
+      "default": "GPS Connected"
+    },
+    "telematicsImei": {
+      "type": "string"
+    },
+    "lastKnownCoordinates": {
+      "type": "json"
+    },
+    "fuelType": {
+      "type": "string",
+      "default": "Diesel (High Cetane)"
+    },
+    "fuelTankCapacityLitres": {
+      "type": "decimal"
+    },
+    "averageConsumption": {
+      "type": "string"
+    },
+    "engineNumber": {
+      "type": "string"
+    },
+    "operatingCapacity": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "purchaseDate": {
+      "type": "string"
+    },
+    "purchaseCost": {
+      "type": "decimal"
+    },
+    "currentBookValue": {
+      "type": "decimal"
+    },
+    "depreciationMethod": {
+      "type": "string"
+    },
+    "insuranceExpiry": {
+      "type": "string"
+    },
+    "fitnessExpiry": {
+      "type": "string"
+    },
+    "pucExpiry": {
+      "type": "string"
+    },
+    "documents": {
+      "type": "json"
+    },
+    "maintenanceRecords": {
+      "type": "json"
+    },
+    "dailyInspections": {
+      "type": "json"
+    },
+    "assignmentHistory": {
+      "type": "json"
+    },
+    "fuelLogs": {
+      "type": "json"
+    }
+  }
+}

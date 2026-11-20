@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "worker_sites",
+  "info": {
+    "singularName": "worker-site",
+    "pluralName": "worker-sites",
+    "displayName": "Worker Site",
+    "description": "Central Single Type for Worker Module holding the Main Worker master component"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "STRUCTIVA Worker Site Operations"
+    },
+    "mainWorker": {
+      "type": "component",
+      "repeatable": false,
+      "component": "worker.main-worker"
+    }
+  }
+}

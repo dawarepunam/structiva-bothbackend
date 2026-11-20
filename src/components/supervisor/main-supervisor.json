@@ -1,0 +1,91 @@
+{
+  "collectionName": "components_supervisor_main_supervisors",
+  "info": {
+    "displayName": "Main Supervisor",
+    "description": "Central master configuration component for all supervisor operational settings",
+    "icon": "shield"
+  },
+  "options": {},
+  "attributes": {
+    "dashboardConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "supervisor.dashboard-config"
+    },
+    "profileConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "supervisor.profile-config"
+    },
+    "projectConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "supervisor.project-config"
+    },
+    "siteConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "supervisor.site-config"
+    },
+    "workforceConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "supervisor.workforce-config"
+    },
+    "attendanceConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "supervisor.attendance-config"
+    },
+    "activitiesConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "supervisor.activities-config"
+    },
+    "tasksConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "supervisor.tasks-config"
+    },
+    "dprConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "supervisor.dpr-config"
+    },
+    "machineryConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "supervisor.machinery-config"
+    },
+    "fuelConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "supervisor.fuel-config"
+    },
+    "expensesConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "supervisor.expenses-config"
+    },
+    "materialRequestsConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "supervisor.material-requests-config"
+    },
+    "issuesConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "supervisor.issues-config"
+    },
+    "notificationsConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "supervisor.notifications-config"
+    },
+    "settingsConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "supervisor.settings-config"
+    }
+  }
+}

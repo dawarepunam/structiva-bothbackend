@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_worker_safety_configs",
+  "info": {
+    "displayName": "Safety Config",
+    "description": "PPE compliance checklist, toolbox talk attendance and emergency protocols",
+    "icon": "shield"
+  },
+  "options": {},
+  "attributes": {
+    "mandatoryPpeList": {
+      "type": "string",
+      "default": "Safety Helmet, High-Vis Vest, Steel-Toe Safety Boots, Cut-Resistant Gloves"
+    },
+    "requireDailySafetyCheck": {
+      "type": "boolean",
+      "default": true
+    },
+    "emergencySosContact": {
+      "type": "string",
+      "default": "+91 98220 99999"
+    }
+  }
+}

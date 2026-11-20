@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_supervisor_machinery_configs",
+  "info": {
+    "displayName": "Supervisor Machinery Configuration",
+    "description": "Site plant and vehicle operating checks",
+    "icon": "car"
+  },
+  "options": {},
+  "attributes": {
+    "enablePreStartInspection": {
+      "type": "boolean",
+      "default": true
+    },
+    "reportBreakdownImmediately": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

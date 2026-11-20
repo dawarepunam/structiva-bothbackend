@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_worker_attendance_configs",
+  "info": {
+    "displayName": "Attendance Config",
+    "description": "Muster roll, shift hours and overtime calculation policies for workers",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "regularShiftHours": {
+      "type": "decimal",
+      "default": 8.0
+    },
+    "overtimeThresholdHours": {
+      "type": "decimal",
+      "default": 8.5
+    },
+    "allowSelfCheckIn": {
+      "type": "boolean",
+      "default": true
+    },
+    "requireSupervisorVerification": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

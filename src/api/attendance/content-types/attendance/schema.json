@@ -1,0 +1,109 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attendances",
+  "info": {
+    "singularName": "attendance",
+    "pluralName": "attendances",
+    "displayName": "Attendance",
+    "description": "Daily worker attendance, GPS geofence verification and check-in logs"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "workerId": {
+      "type": "string",
+      "required": true
+    },
+    "workerName": {
+      "type": "string",
+      "required": true
+    },
+    "workerCode": {
+      "type": "string",
+      "required": true
+    },
+    "site": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "string",
+      "required": true
+    },
+    "checkInTime": {
+      "type": "string"
+    },
+    "checkOutTime": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Present",
+        "Half Day",
+        "Overtime",
+        "Absent"
+      ],
+      "default": "Present"
+    },
+    "verificationMethod": {
+      "type": "enumeration",
+      "enum": [
+        "GPS + Geofence",
+        "QR Code",
+        "Supervisor Manual Overrule"
+      ],
+      "default": "GPS + Geofence"
+    },
+    "latitude": {
+      "type": "decimal"
+    },
+    "longitude": {
+      "type": "decimal"
+    },
+    "distanceFromSiteMetres": {
+      "type": "decimal"
+    },
+    "gpsAccuracyMetres": {
+      "type": "decimal"
+    },
+    "geofencePassed": {
+      "type": "boolean",
+      "default": true
+    },
+    "qrVerified": {
+      "type": "boolean",
+      "default": false
+    },
+    "isException": {
+      "type": "boolean",
+      "default": false
+    },
+    "exceptionReason": {
+      "type": "string"
+    },
+    "approvalStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Auto-Verified",
+        "Pending Exception Review",
+        "Approved by Supervisor",
+        "Rejected"
+      ],
+      "default": "Auto-Verified"
+    },
+    "supervisorRemark": {
+      "type": "string"
+    },
+    "hoursWorked": {
+      "type": "decimal",
+      "default": 8
+    },
+    "wageEarned": {
+      "type": "decimal",
+      "default": 0
+    }
+  }
+}

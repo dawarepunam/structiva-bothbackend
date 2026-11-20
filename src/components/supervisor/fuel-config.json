@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_supervisor_fuel_configs",
+  "info": {
+    "displayName": "Supervisor Fuel Configuration",
+    "description": "Diesel bowser disbursement checks and dip-stick meter logs",
+    "icon": "database"
+  },
+  "options": {},
+  "attributes": {
+    "fuelDisbursementCutoffTime": {
+      "type": "string",
+      "default": "18:00"
+    },
+    "requireHourMeterReading": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

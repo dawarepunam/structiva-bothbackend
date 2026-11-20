@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_worker_notifications_configs",
+  "info": {
+    "displayName": "Notifications Config",
+    "description": "Site push notifications, SMS alerts and shift schedule broadcasts",
+    "icon": "bell"
+  },
+  "options": {},
+  "attributes": {
+    "enableSmsAlerts": {
+      "type": "boolean",
+      "default": true
+    },
+    "enablePushNotifications": {
+      "type": "boolean",
+      "default": true
+    },
+    "notifyShiftChanges": {
+      "type": "boolean",
+      "default": true
+    },
+    "notifyWageDisbursals": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

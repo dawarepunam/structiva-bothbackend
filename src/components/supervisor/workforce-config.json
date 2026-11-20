@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_supervisor_workforce_configs",
+  "info": {
+    "displayName": "Supervisor Workforce Configuration",
+    "description": "Rules for field labor registration and supervisor muster scoping",
+    "icon": "users"
+  },
+  "options": {},
+  "attributes": {
+    "allowWorkerFieldEnrollment": {
+      "type": "boolean",
+      "default": true
+    },
+    "requirePhotoOnRegistration": {
+      "type": "boolean",
+      "default": true
+    },
+    "pendingApprovalThresholdDays": {
+      "type": "integer",
+      "default": 3
+    }
+  }
+}

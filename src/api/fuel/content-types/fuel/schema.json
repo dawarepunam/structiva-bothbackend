@@ -1,0 +1,78 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fuels",
+  "info": {
+    "singularName": "fuel",
+    "pluralName": "fuels",
+    "displayName": "Fuel Log",
+    "description": "Fuel allocation, diesel issuance, bowser pump telemetry and theft detection logs"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logId": {
+      "type": "string"
+    },
+    "assetId": {
+      "type": "string"
+    },
+    "assetCode": {
+      "type": "string",
+      "required": true
+    },
+    "assetName": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "string",
+      "required": true
+    },
+    "litresDisbursed": {
+      "type": "decimal",
+      "required": true
+    },
+    "ratePerLitre": {
+      "type": "decimal",
+      "required": true
+    },
+    "totalCost": {
+      "type": "decimal",
+      "required": true
+    },
+    "meterReading": {
+      "type": "string"
+    },
+    "fuelPumpOrBowser": {
+      "type": "string"
+    },
+    "receiptInvoiceNo": {
+      "type": "string"
+    },
+    "supervisorName": {
+      "type": "string"
+    },
+    "operatorName": {
+      "type": "string"
+    },
+    "runHoursLogged": {
+      "type": "decimal"
+    },
+    "burnRatePerHour": {
+      "type": "decimal"
+    },
+    "isTheftAnomaly": {
+      "type": "boolean",
+      "default": false
+    },
+    "theftVarianceLitres": {
+      "type": "decimal",
+      "default": 0
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}

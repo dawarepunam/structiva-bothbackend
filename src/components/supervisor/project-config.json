@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_supervisor_project_configs",
+  "info": {
+    "displayName": "Supervisor Project Configuration",
+    "description": "Assigned projects and site bounds",
+    "icon": "building"
+  },
+  "options": {},
+  "attributes": {
+    "assignedProjectCode": {
+      "type": "string",
+      "default": "PRJ-SKY-01"
+    },
+    "assignedProjectName": {
+      "type": "string",
+      "default": "Skyline Commercial Complex (Tower A)"
+    },
+    "clientAuthority": {
+      "type": "string",
+      "default": "Prestige Global Infrastructures Ltd"
+    }
+  }
+}

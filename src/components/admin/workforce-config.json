@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_admin_workforce_configs",
+  "info": {
+    "displayName": "Workforce Configuration",
+    "description": "Admin rules for trade workers and supervisors",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "requireAdminApprovalForWorkers": {
+      "type": "boolean",
+      "default": true
+    },
+    "defaultDailyWageSkilled": {
+      "type": "decimal",
+      "default": 850
+    },
+    "defaultDailyWageUnskilled": {
+      "type": "decimal",
+      "default": 550
+    },
+    "overtimeMultiplier": {
+      "type": "decimal",
+      "default": 1.5
+    }
+  }
+}

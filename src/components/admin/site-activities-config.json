@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_admin_site_activities_configs",
+  "info": {
+    "displayName": "Site Activities Configuration",
+    "description": "Admin rules for task and site activity logging",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "allowBackdatedActivityHours": {
+      "type": "integer",
+      "default": 24
+    },
+    "requireGeoTagVerification": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

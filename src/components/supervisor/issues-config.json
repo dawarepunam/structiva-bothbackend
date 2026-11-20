@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_supervisor_issues_configs",
+  "info": {
+    "displayName": "Supervisor Issues Configuration",
+    "description": "Hazard incident reporting and immediate safety halts",
+    "icon": "shield"
+  },
+  "options": {},
+  "attributes": {
+    "allowWorkHaltOnSafetyHazard": {
+      "type": "boolean",
+      "default": true
+    },
+    "mandatoryAccidentReportWithinMins": {
+      "type": "integer",
+      "default": 15
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_admin_attendance_configs",
+  "info": {
+    "displayName": "Attendance Configuration",
+    "description": "Admin configuration for shifts and attendance muster",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "shiftStartTime": {
+      "type": "string",
+      "default": "08:30"
+    },
+    "shiftEndTime": {
+      "type": "string",
+      "default": "17:30"
+    },
+    "halfDayThresholdHours": {
+      "type": "decimal",
+      "default": 4.5
+    },
+    "fullDayThresholdHours": {
+      "type": "decimal",
+      "default": 8.0
+    }
+  }
+}

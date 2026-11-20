@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_supervisor_dashboard_configs",
+  "info": {
+    "displayName": "Supervisor Dashboard Configuration",
+    "description": "Supervisor shift overview and assigned site dashboard settings",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "showWeatherForecast": {
+      "type": "boolean",
+      "default": true
+    },
+    "defaultSiteId": {
+      "type": "string",
+      "default": "SITE-PNQ-01"
+    },
+    "enableDprReminders": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "issue_incidents",
+  "info": {
+    "singularName": "issue-incident",
+    "pluralName": "issue-incidents",
+    "displayName": "Issue & Incident",
+    "description": "Safety incidents, equipment breakdowns, material defects, and quality snags"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "project": {
+      "type": "string",
+      "required": true
+    },
+    "site": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["Safety Violation", "Equipment Breakdown", "Material Delay", "Quality Defect", "Weather Delay", "Other"],
+      "default": "Equipment Breakdown"
+    },
+    "severity": {
+      "type": "enumeration",
+      "enum": ["Critical", "High", "Medium", "Low"],
+      "default": "Medium"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["Open", "Investigating", "Resolved", "Closed"],
+      "default": "Open"
+    },
+    "reportedBy": {
+      "type": "string"
+    },
+    "assignedTo": {
+      "type": "string"
+    },
+    "reportedDate": {
+      "type": "date"
+    },
+    "resolution": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

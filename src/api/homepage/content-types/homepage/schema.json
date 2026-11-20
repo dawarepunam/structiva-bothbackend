@@ -1,0 +1,79 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage Content",
+    "description": "Corporate homepage editorial and hero management"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroHeadline": {
+      "type": "string",
+      "required": true,
+      "default": "Engineering with Precision. Execution with Responsibility."
+    },
+    "heroSubheadline": {
+      "type": "text",
+      "required": true
+    },
+    "heroCtaText": {
+      "type": "string",
+      "default": "Explore Our Services"
+    },
+    "heroSecondaryCtaText": {
+      "type": "string",
+      "default": "Discuss Your Project"
+    },
+    "aboutTagline": {
+      "type": "string",
+      "default": "Quality Work Is Our Backbone."
+    },
+    "aboutTitle": {
+      "type": "string"
+    },
+    "aboutDescription": {
+      "type": "text"
+    },
+    "statExperienceYears": {
+      "type": "string",
+      "default": "18+"
+    },
+    "statProjectsCompleted": {
+      "type": "string",
+      "default": "250+"
+    },
+    "statWorkforceStrength": {
+      "type": "string",
+      "default": "1,200+"
+    },
+    "statMachineryUnits": {
+      "type": "string",
+      "default": "85+"
+    },
+    "ctaHeadline": {
+      "type": "string",
+      "default": "Have an Infrastructure Project in Mind?"
+    },
+    "ctaDescription": {
+      "type": "text",
+      "default": "Let's discuss your project requirements and explore how STRUCTIVA can support your execution goals."
+    },
+    "contactPhone": {
+      "type": "string",
+      "default": "+91 (020) 4123 8800"
+    },
+    "contactEmail": {
+      "type": "string",
+      "default": "corporate@structiva.internal"
+    },
+    "officeAddress": {
+      "type": "text",
+      "default": "STRUCTIVA Towers, Plot 42, Kharadi Central Boulevard, Pune, Maharashtra 411014"
+    }
+  }
+}

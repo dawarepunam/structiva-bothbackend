@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_worker_dashboard_configs",
+  "info": {
+    "displayName": "Dashboard Config",
+    "description": "Configuration settings for Worker Mobile/Desktop Shift Dashboard",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "welcomeMessage": {
+      "type": "string",
+      "default": "Welcome to STRUCTIVA Trade Operations"
+    },
+    "enableShiftClockIn": {
+      "type": "boolean",
+      "default": true
+    },
+    "enableEmergencySos": {
+      "type": "boolean",
+      "default": true
+    },
+    "showWageSummary": {
+      "type": "boolean",
+      "default": true
+    },
+    "refreshIntervalSeconds": {
+      "type": "integer",
+      "default": 30
+    }
+  }
+}

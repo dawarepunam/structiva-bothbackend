@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_admin_dpr_reports_configs",
+  "info": {
+    "displayName": "DPR & Reports Configuration",
+    "description": "Admin configuration for daily progress reports",
+    "icon": "write"
+  },
+  "options": {},
+  "attributes": {
+    "dprSubmissionCutoffTime": {
+      "type": "string",
+      "default": "22:00"
+    },
+    "requireWorkforceHeadcountBreakdown": {
+      "type": "boolean",
+      "default": true
+    },
+    "requireDailyMachineryLog": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

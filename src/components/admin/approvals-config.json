@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_admin_approvals_configs",
+  "info": {
+    "displayName": "Approvals Configuration",
+    "description": "Centralized workflow configuration for admin approvals",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "enableMultiTierApproval": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoEscalatePendingHours": {
+      "type": "integer",
+      "default": 48
+    },
+    "notifySupervisorOnDecision": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

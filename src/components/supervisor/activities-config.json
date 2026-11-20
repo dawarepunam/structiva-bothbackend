@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_supervisor_activities_configs",
+  "info": {
+    "displayName": "Supervisor Activities Configuration",
+    "description": "Shift activity logs, engineering milestones and task progress",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "allowDirectProgressUpdate": {
+      "type": "boolean",
+      "default": true
+    },
+    "requirePhotoWithActivity": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

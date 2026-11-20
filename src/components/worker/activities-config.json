@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_worker_activities_configs",
+  "info": {
+    "displayName": "Activities Config",
+    "description": "Daily site log activities and trade execution logs",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "enableActivitySubmission": {
+      "type": "boolean",
+      "default": true
+    },
+    "trackWorkHours": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

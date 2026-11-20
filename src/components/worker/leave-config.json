@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_worker_leave_configs",
+  "info": {
+    "displayName": "Leave Config",
+    "description": "Annual, casual and sick leave allocations and balance tracking for workers",
+    "icon": "plane"
+  },
+  "options": {},
+  "attributes": {
+    "paidLeaveDaysPerYear": {
+      "type": "integer",
+      "default": 15
+    },
+    "sickLeaveDaysPerYear": {
+      "type": "integer",
+      "default": 10
+    },
+    "casualLeaveDaysPerYear": {
+      "type": "integer",
+      "default": 7
+    },
+    "requiresAdvanceNoticeDays": {
+      "type": "integer",
+      "default": 2
+    }
+  }
+}

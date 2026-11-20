@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_worker_documents_configs",
+  "info": {
+    "displayName": "Documents Config",
+    "description": "Identity proofs, trade certifications, insurance and contract documents",
+    "icon": "folder"
+  },
+  "options": {},
+  "attributes": {
+    "allowedFileFormats": {
+      "type": "string",
+      "default": "pdf,jpg,png,jpeg"
+    },
+    "maxFileSizeMb": {
+      "type": "integer",
+      "default": 10
+    },
+    "requireAadhaarVerification": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_worker_payslip_configs",
+  "info": {
+    "displayName": "Payslip Config",
+    "description": "Digital wage slip generation, download and verification settings",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "enablePdfDownload": {
+      "type": "boolean",
+      "default": true
+    },
+    "showOvertimeBreakup": {
+      "type": "boolean",
+      "default": true
+    },
+    "authorizedSignatory": {
+      "type": "string",
+      "default": "STRUCTIVA HR & Site Finance Department"
+    }
+  }
+}

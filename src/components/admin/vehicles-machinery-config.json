@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_admin_vehicles_machinery_configs",
+  "info": {
+    "displayName": "Vehicles & Machinery Configuration",
+    "description": "Admin configuration for heavy fleet and vehicle assets",
+    "icon": "car"
+  },
+  "options": {},
+  "attributes": {
+    "maintenanceAlertMileageKm": {
+      "type": "integer",
+      "default": 5000
+    },
+    "maintenanceAlertHours": {
+      "type": "integer",
+      "default": 250
+    },
+    "requirePreShiftInspection": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

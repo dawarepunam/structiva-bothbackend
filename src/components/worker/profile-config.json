@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_worker_profile_configs",
+  "info": {
+    "displayName": "Profile Config",
+    "description": "Worker personal details, skill certifications and banking settings",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "allowProfilePhotoUpload": {
+      "type": "boolean",
+      "default": true
+    },
+    "requireKycVerification": {
+      "type": "boolean",
+      "default": true
+    },
+    "allowBankDetailsEdit": {
+      "type": "boolean",
+      "default": false
+    },
+    "contactSupportPhone": {
+      "type": "string",
+      "default": "+91 98220 00000"
+    }
+  }
+}

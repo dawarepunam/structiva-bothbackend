@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_admin_dashboard_configs",
+  "info": {
+    "displayName": "Dashboard Configuration",
+    "description": "Configuration and metrics overview for Admin Dashboard",
+    "icon": "chartBubble"
+  },
+  "options": {},
+  "attributes": {
+    "refreshIntervalSeconds": {
+      "type": "integer",
+      "default": 30
+    },
+    "portfolioTargetBudget": {
+      "type": "decimal"
+    },
+    "fiscalYear": {
+      "type": "string",
+      "default": "2026-2027"
+    },
+    "enableRealtimeSync": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_supervisor_dpr_configs",
+  "info": {
+    "displayName": "Supervisor DPR Configuration",
+    "description": "Daily Progress Report submission parameters and checklist",
+    "icon": "write"
+  },
+  "options": {},
+  "attributes": {
+    "mandatoryDprPhotosCount": {
+      "type": "integer",
+      "default": 3
+    },
+    "requireLaborCountVerification": {
+      "type": "boolean",
+      "default": true
+    },
+    "requireFuelConsumptionAudit": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

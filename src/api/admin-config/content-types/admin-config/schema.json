@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "admin_configs",
+  "info": {
+    "singularName": "admin-config",
+    "pluralName": "admin-configs",
+    "displayName": "Admin Configuration",
+    "description": "Global Admin Master Configuration holding the Main Admin component"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "STRUCTIVA Master Admin Configuration"
+    },
+    "mainAdmin": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin.main-admin"
+    }
+  }
+}

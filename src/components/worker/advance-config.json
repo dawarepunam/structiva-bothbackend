@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_worker_advance_configs",
+  "info": {
+    "displayName": "Advance Config",
+    "description": "Salary advance limits, approval rules and installment deduction rules",
+    "icon": "hand"
+  },
+  "options": {},
+  "attributes": {
+    "maxAdvancePercentage": {
+      "type": "decimal",
+      "default": 50.0
+    },
+    "maxInstallments": {
+      "type": "integer",
+      "default": 3
+    },
+    "requireSupervisorApproval": {
+      "type": "boolean",
+      "default": true
+    },
+    "requireAdminApproval": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "material_procurements",
+  "info": {
+    "singularName": "material-procurement",
+    "pluralName": "material-procurements",
+    "displayName": "Material Procurement",
+    "description": "Site material indents, procurement orders, inventory requests and deliveries"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "itemName": {
+      "type": "string",
+      "required": true
+    },
+    "project": {
+      "type": "string",
+      "required": true
+    },
+    "site": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["Cement & Concrete", "Steel & Rebar", "Aggregates & Sand", "Pipes & Fittings", "Electrical & Cables", "Safety Gear & PPE", "Tools & Hardware"],
+      "default": "Cement & Concrete"
+    },
+    "quantity": {
+      "type": "decimal",
+      "required": true
+    },
+    "unit": {
+      "type": "string",
+      "required": true
+    },
+    "estimatedCost": {
+      "type": "decimal"
+    },
+    "requestedBy": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["Pending Approval", "Approved", "Ordered", "Delivered", "Rejected"],
+      "default": "Pending Approval"
+    },
+    "supplier": {
+      "type": "string"
+    },
+    "requiredDate": {
+      "type": "date"
+    },
+    "deliveryStatus": {
+      "type": "enumeration",
+      "enum": ["Not Dispatched", "In Transit", "Delivered at Site", "Partially Delivered"],
+      "default": "Not Dispatched"
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}

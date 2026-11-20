@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_admin_issues_incidents_configs",
+  "info": {
+    "displayName": "Issues & Incidents Configuration",
+    "description": "Admin configuration for safety and defect management",
+    "icon": "shield"
+  },
+  "options": {},
+  "attributes": {
+    "criticalIncidentEscalationMinutes": {
+      "type": "integer",
+      "default": 30
+    },
+    "ehsOfficerEmail": {
+      "type": "string",
+      "default": "safety@structiva.internal"
+    },
+    "zeroToleranceEnforcement": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

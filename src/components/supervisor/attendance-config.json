@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_supervisor_attendance_configs",
+  "info": {
+    "displayName": "Supervisor Attendance Configuration",
+    "description": "Shift muster rules, late cutoffs, and biometric sync",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "morningMusterCutoff": {
+      "type": "string",
+      "default": "09:15"
+    },
+    "nightShiftAllowed": {
+      "type": "boolean",
+      "default": true
+    },
+    "allowSupervisorSelfPunch": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

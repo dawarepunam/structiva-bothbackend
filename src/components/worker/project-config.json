@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_worker_project_configs",
+  "info": {
+    "displayName": "Project Config",
+    "description": "Configuration for worker project allocations and site details",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "showContractValue": {
+      "type": "boolean",
+      "default": false
+    },
+    "showSupervisorContact": {
+      "type": "boolean",
+      "default": true
+    },
+    "allowProjectSwitching": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "collectionName": "components_admin_main_admins",
+  "info": {
+    "displayName": "Main Admin",
+    "description": "Comprehensive administrative orchestration component holding module configurations",
+    "icon": "shield"
+  },
+  "options": {},
+  "attributes": {
+    "dashboardConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin.dashboard-config"
+    },
+    "projectsConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin.projects-config"
+    },
+    "workforceConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin.workforce-config"
+    },
+    "attendanceConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin.attendance-config"
+    },
+    "vehiclesMachineryConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin.vehicles-machinery-config"
+    },
+    "fuelManagementConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin.fuel-management-config"
+    },
+    "siteExpensesConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin.site-expenses-config"
+    },
+    "approvalsConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin.approvals-config"
+    },
+    "reportsConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin.reports-config"
+    },
+    "materialProcurementConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin.material-procurement-config"
+    },
+    "siteActivitiesConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin.site-activities-config"
+    },
+    "issuesIncidentsConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin.issues-incidents-config"
+    },
+    "dprReportsConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin.dpr-reports-config"
+    }
+  }
+}

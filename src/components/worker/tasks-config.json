@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_worker_tasks_configs",
+  "info": {
+    "displayName": "Tasks Config",
+    "description": "Configuration for worker work order execution, remarks and status transitions",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "allowDirectCompletion": {
+      "type": "boolean",
+      "default": false
+    },
+    "requirePhotoEvidence": {
+      "type": "boolean",
+      "default": true
+    },
+    "allowWorkerRemarks": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

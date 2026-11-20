@@ -1,0 +1,91 @@
+{
+  "collectionName": "components_worker_main_workers",
+  "info": {
+    "displayName": "Main Worker",
+    "description": "Central master configuration component for all worker portal operational settings",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "dashboardConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "worker.dashboard-config"
+    },
+    "profileConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "worker.profile-config"
+    },
+    "projectConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "worker.project-config"
+    },
+    "siteConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "worker.site-config"
+    },
+    "attendanceConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "worker.attendance-config"
+    },
+    "tasksConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "worker.tasks-config"
+    },
+    "activitiesConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "worker.activities-config"
+    },
+    "leaveConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "worker.leave-config"
+    },
+    "payrollConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "worker.payroll-config"
+    },
+    "payslipConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "worker.payslip-config"
+    },
+    "advanceConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "worker.advance-config"
+    },
+    "notificationsConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "worker.notifications-config"
+    },
+    "safetyConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "worker.safety-config"
+    },
+    "documentsConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "worker.documents-config"
+    },
+    "supportConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "worker.support-config"
+    },
+    "settingsConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "worker.settings-config"
+    }
+  }
+}

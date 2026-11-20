@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_supervisor_site_configs",
+  "info": {
+    "displayName": "Supervisor Site Configuration",
+    "description": "Site geofence and localized perimeter controls",
+    "icon": "pinMap"
+  },
+  "options": {},
+  "attributes": {
+    "siteName": {
+      "type": "string",
+      "default": "Tower A Construction Zone"
+    },
+    "geofenceRadiusMeters": {
+      "type": "integer",
+      "default": 350
+    },
+    "siteSafetyLevel": {
+      "type": "enumeration",
+      "enum": ["Level-1 Standard", "Level-2 Elevated Hazard", "Level-3 Zero Tolerance"],
+      "default": "Level-3 Zero Tolerance"
+    }
+  }
+}

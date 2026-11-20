@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_supervisor_profile_configs",
+  "info": {
+    "displayName": "Supervisor Profile Configuration",
+    "description": "Supervisor identity, designation, and field assignment parameters",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "allowProfilePhoneUpdate": {
+      "type": "boolean",
+      "default": true
+    },
+    "emergencyContactNumber": {
+      "type": "string"
+    },
+    "reportingHead": {
+      "type": "string",
+      "default": "Er. Rajesh Kulkarni (Project Director)"
+    }
+  }
+}

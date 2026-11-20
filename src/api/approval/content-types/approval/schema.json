@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "approvals",
+  "info": {
+    "singularName": "approval",
+    "pluralName": "approvals",
+    "displayName": "Approval Workflow",
+    "description": "Centralized multi-module operational approval and rejection pipeline"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["Worker Onboarding", "Site Expense", "Material Indent", "Attendance Mismatch", "Fuel Log", "Leave Application", "Equipment Requisition"],
+      "required": true
+    },
+    "project": {
+      "type": "string",
+      "required": true
+    },
+    "site": {
+      "type": "string"
+    },
+    "requestedBy": {
+      "type": "string",
+      "required": true
+    },
+    "requestedDate": {
+      "type": "date"
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["Pending", "Approved", "Rejected", "Under Review"],
+      "default": "Pending"
+    },
+    "reviewedBy": {
+      "type": "string"
+    },
+    "reviewedDate": {
+      "type": "date"
+    },
+    "remarks": {
+      "type": "text"
+    },
+    "relatedEntityId": {
+      "type": "string"
+    },
+    "relatedCollection": {
+      "type": "string"
+    }
+  }
+}

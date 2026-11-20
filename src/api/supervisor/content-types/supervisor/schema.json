@@ -1,0 +1,90 @@
+{
+  "kind": "collectionType",
+  "collectionName": "supervisors",
+  "info": {
+    "singularName": "supervisor",
+    "pluralName": "supervisors",
+    "displayName": "Supervisor",
+    "description": "Enterprise Chief Field Supervisor master employee record"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "supervisorId": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "officialEmail": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "designation": {
+      "type": "string",
+      "default": "Site Operations Supervisor"
+    },
+    "department": {
+      "type": "string",
+      "default": "Civil & Structural Engineering"
+    },
+    "employmentType": {
+      "type": "enumeration",
+      "enum": [
+        "Full-Time Corporate Staff",
+        "Contractual Senior Staff",
+        "Project Consultant"
+      ],
+      "default": "Full-Time Corporate Staff"
+    },
+    "joiningDate": {
+      "type": "string"
+    },
+    "assignedProject": {
+      "type": "string"
+    },
+    "assignedSite": {
+      "type": "string"
+    },
+    "reportingAuthority": {
+      "type": "string",
+      "default": "Er. Rajesh Kulkarni (Project Director)"
+    },
+    "accountStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Active",
+        "Suspended",
+        "Pending Verification"
+      ],
+      "default": "Active"
+    },
+    "monthlySalary": {
+      "type": "decimal"
+    },
+    "securityClearance": {
+      "type": "string",
+      "default": "Level 2 Field Operations"
+    },
+    "totalWorkersAssigned": {
+      "type": "integer",
+      "default": 12
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}

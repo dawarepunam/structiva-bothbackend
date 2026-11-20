@@ -1,0 +1,100 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": "Structiva Enterprise Construction Projects & Sites"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "client": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Commercial Building",
+        "Highway Infrastructure",
+        "Metro Rail transit",
+        "Industrial Plant"
+      ],
+      "default": "Commercial Building"
+    },
+    "budget": {
+      "type": "biginteger",
+      "required": true
+    },
+    "spent": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Active",
+        "Under Review",
+        "Completed"
+      ],
+      "default": "Active"
+    },
+    "progress": {
+      "type": "integer",
+      "min": 0,
+      "max": 100,
+      "default": 0
+    },
+    "startDate": {
+      "type": "string"
+    },
+    "expectedCompletion": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "projectManager": {
+      "type": "string"
+    },
+    "projectSupervisor": {
+      "type": "string"
+    },
+    "deployedMachinery": {
+      "type": "integer",
+      "default": 0
+    },
+    "description": {
+      "type": "text"
+    },
+    "gallery": {
+      "type": "json"
+    },
+    "milestones": {
+      "type": "json"
+    },
+    "documents": {
+      "type": "json"
+    },
+    "dailyReports": {
+      "type": "json"
+    }
+  }
+}

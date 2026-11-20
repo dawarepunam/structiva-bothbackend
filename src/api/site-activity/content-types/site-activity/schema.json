@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "site_activities",
+  "info": {
+    "singularName": "site-activity",
+    "pluralName": "site-activities",
+    "displayName": "Site Activity",
+    "description": "Daily engineering task, work execution and site activity tracking"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "project": {
+      "type": "string",
+      "required": true
+    },
+    "site": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["Earthwork", "Civil & Structural", "Piping & Jointing", "Electrical & Solar", "Heavy Fabrication", "Inspection & Testing"],
+      "default": "Civil & Structural"
+    },
+    "progress": {
+      "type": "integer",
+      "min": 0,
+      "max": 100,
+      "default": 0
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["In Progress", "Completed", "Delayed", "Planned"],
+      "default": "In Progress"
+    },
+    "assignedSupervisor": {
+      "type": "string"
+    },
+    "workforceCount": {
+      "type": "integer",
+      "default": 0
+    },
+    "machineryDeployed": {
+      "type": "string"
+    },
+    "targetDate": {
+      "type": "date"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_home_abouts",
+  "info": {
+    "displayName": "About Section",
+    "icon": "information",
+    "description": "About section editorial and pillars"
+  },
+  "options": {},
+  "attributes": {
+    "tagline": {
+      "type": "string",
+      "default": "Quality Work Is Our Backbone."
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "experienceYears": {
+      "type": "string",
+      "default": "18+"
+    },
+    "projectsCompleted": {
+      "type": "string",
+      "default": "250+"
+    },
+    "workforceStrength": {
+      "type": "string",
+      "default": "1,200+"
+    },
+    "machineryUnits": {
+      "type": "string",
+      "default": "85+"
+    }
+  }
+}

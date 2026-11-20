@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_home_ctas",
+  "info": {
+    "displayName": "CTA Section",
+    "icon": "phone",
+    "description": "Call to action banner"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "default": "Have an Infrastructure Project in Mind?"
+    },
+    "description": {
+      "type": "text",
+      "default": "Let's discuss your project requirements and explore how STRUCTIVA can support your execution goals."
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Contact Our Team"
+    }
+  }
+}

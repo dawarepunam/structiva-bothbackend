@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_supervisor_tasks_configs",
+  "info": {
+    "displayName": "Supervisor Tasks Configuration",
+    "description": "Trade crew task delegation and verification checklist",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "maxActiveTasksPerCrew": {
+      "type": "integer",
+      "default": 5
+    },
+    "autoCloseCompletedTasks": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "expenses",
+  "info": {
+    "singularName": "expense",
+    "pluralName": "expenses",
+    "displayName": "Site Expense",
+    "description": "Daily site expenditure, petty cash, invoices and contractor payments"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "expenseId": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "category": {
+      "type": "string",
+      "required": true
+    },
+    "amount": {
+      "type": "decimal",
+      "required": true
+    },
+    "project": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "string",
+      "required": true
+    },
+    "paidTo": {
+      "type": "string"
+    },
+    "paymentMode": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Approved",
+        "Pending Review",
+        "Rejected"
+      ],
+      "default": "Approved"
+    },
+    "receiptUrl": {
+      "type": "string"
+    },
+    "submittedBy": {
+      "type": "string"
+    },
+    "remarks": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "supervisor_requests",
+  "info": {
+    "singularName": "supervisor-request",
+    "pluralName": "supervisor-requests",
+    "displayName": "Supervisor Request",
+    "description": "Unified indents, material requests, maintenance and site incidents"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "requestType": {
+      "type": "enumeration",
+      "enum": [
+        "Material Request",
+        "Site Issue",
+        "Maintenance",
+        "Labour Requirement",
+        "DPR"
+      ],
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "project": {
+      "type": "string",
+      "required": true
+    },
+    "site": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "priority": {
+      "type": "enumeration",
+      "enum": [
+        "Critical",
+        "High",
+        "Standard",
+        "Low"
+      ],
+      "default": "Standard"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Draft",
+        "Submitted",
+        "Under Review",
+        "Approved",
+        "Rejected",
+        "Resolved",
+        "Revision Required"
+      ],
+      "default": "Submitted"
+    },
+    "details": {
+      "type": "json"
+    },
+    "remarks": {
+      "type": "text"
+    },
+    "adminRemarks": {
+      "type": "text"
+    },
+    "submittedBy": {
+      "type": "string",
+      "required": true
+    },
+    "submittedDate": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

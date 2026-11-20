@@ -1,0 +1,170 @@
+{
+  "kind": "collectionType",
+  "collectionName": "workers",
+  "info": {
+    "singularName": "worker",
+    "pluralName": "workers",
+    "displayName": "Worker",
+    "description": "Enterprise construction worker and tradesperson record"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "workerId": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "phone": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Skilled",
+        "Semi-Skilled",
+        "Unskilled"
+      ],
+      "default": "Skilled"
+    },
+    "skill": {
+      "type": "string"
+    },
+    "additionalSkills": {
+      "type": "json"
+    },
+    "dailyWage": {
+      "type": "decimal"
+    },
+    "overtimeHourlyRate": {
+      "type": "decimal"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Active",
+        "Inactive"
+      ],
+      "default": "Active"
+    },
+    "assignedProject": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "string"
+    },
+    "dob": {
+      "type": "string"
+    },
+    "gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female",
+        "Other"
+      ],
+      "default": "Male"
+    },
+    "address": {
+      "type": "text"
+    },
+    "hometown": {
+      "type": "string"
+    },
+    "aadhaarNumber": {
+      "type": "string"
+    },
+    "panNumber": {
+      "type": "string"
+    },
+    "bloodGroup": {
+      "type": "string"
+    },
+    "emergencyContact": {
+      "type": "string"
+    },
+    "emergencyRelation": {
+      "type": "string"
+    },
+    "joiningDate": {
+      "type": "string"
+    },
+    "experienceYears": {
+      "type": "integer"
+    },
+    "employmentType": {
+      "type": "enumeration",
+      "enum": [
+        "Direct Payroll",
+        "Subcontractor Crew",
+        "Daily Muster"
+      ],
+      "default": "Direct Payroll"
+    },
+    "supervisorName": {
+      "type": "string"
+    },
+    "safetyCertified": {
+      "type": "boolean",
+      "default": false
+    },
+    "inductionDate": {
+      "type": "string"
+    },
+    "bankName": {
+      "type": "string"
+    },
+    "accountNumberMasked": {
+      "type": "string"
+    },
+    "ifscCode": {
+      "type": "string"
+    },
+    "paymentMode": {
+      "type": "enumeration",
+      "enum": [
+        "Bank Transfer",
+        "Direct Cash Voucher",
+        "UPI"
+      ],
+      "default": "Bank Transfer"
+    },
+    "totalDaysWorked": {
+      "type": "integer",
+      "default": 0
+    },
+    "presentDaysThisMonth": {
+      "type": "integer",
+      "default": 0
+    },
+    "overtimeHoursThisMonth": {
+      "type": "decimal",
+      "default": 0
+    },
+    "advanceTakenThisMonth": {
+      "type": "decimal",
+      "default": 0
+    },
+    "documents": {
+      "type": "json"
+    },
+    "leaves": {
+      "type": "json"
+    },
+    "projectHistory": {
+      "type": "json"
+    },
+    "recentActivities": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_worker_site_configs",
+  "info": {
+    "displayName": "Site Config",
+    "description": "Configuration for active job site geolocation and check-in parameters",
+    "icon": "pin"
+  },
+  "options": {},
+  "attributes": {
+    "geofenceRadiusMeters": {
+      "type": "integer",
+      "default": 300
+    },
+    "enforceGeofence": {
+      "type": "boolean",
+      "default": false
+    },
+    "emergencyContactNumber": {
+      "type": "string",
+      "default": "+91 (020) 4123 8800"
+    }
+  }
+}

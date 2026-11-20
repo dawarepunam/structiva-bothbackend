@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_supervisor_settings_configs",
+  "info": {
+    "displayName": "Supervisor Settings Configuration",
+    "description": "Supervisor workspace preferences and language defaults",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "interfaceLanguage": {
+      "type": "string",
+      "default": "English"
+    },
+    "offlineSyncEnabled": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

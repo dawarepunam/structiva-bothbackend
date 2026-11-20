@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_admin_projects_configs",
+  "info": {
+    "displayName": "Projects & Sites Configuration",
+    "description": "Admin configuration for projects and sites tracking",
+    "icon": "building"
+  },
+  "options": {},
+  "attributes": {
+    "defaultCurrency": {
+      "type": "string",
+      "default": "INR"
+    },
+    "allowSupervisorSelfAssignment": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoLockCompletedProjects": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

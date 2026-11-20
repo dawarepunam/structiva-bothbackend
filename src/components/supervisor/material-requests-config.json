@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_supervisor_material_requests_configs",
+  "info": {
+    "displayName": "Supervisor Material Requests Configuration",
+    "description": "Emergency material indent and stock requisition limits",
+    "icon": "layer"
+  },
+  "options": {},
+  "attributes": {
+    "allowEmergencyIndent": {
+      "type": "boolean",
+      "default": true
+    },
+    "urgentDeliveryTimeHours": {
+      "type": "integer",
+      "default": 12
+    }
+  }
+}
