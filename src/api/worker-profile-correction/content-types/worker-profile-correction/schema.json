@@ -1,0 +1,86 @@
+{
+  "kind": "collectionType",
+  "collectionName": "worker_profile_corrections",
+  "info": {
+    "singularName": "worker-profile-correction",
+    "pluralName": "worker-profile-corrections",
+    "displayName": "Worker Profile Correction",
+    "description": "Worker personal details and profile photo correction requests for Admin approval"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "workerId": {
+      "type": "string",
+      "required": true
+    },
+    "workerName": {
+      "type": "string",
+      "required": true
+    },
+    "workerCode": {
+      "type": "string",
+      "required": true
+    },
+    "project": {
+      "type": "string"
+    },
+    "site": {
+      "type": "string"
+    },
+    "supervisorName": {
+      "type": "string"
+    },
+    "fieldName": {
+      "type": "string",
+      "required": true
+    },
+    "fieldLabel": {
+      "type": "string"
+    },
+    "oldValue": {
+      "type": "text"
+    },
+    "newValue": {
+      "type": "text"
+    },
+    "isPhotoChange": {
+      "type": "boolean",
+      "default": false
+    },
+    "oldPhotoUrl": {
+      "type": "text"
+    },
+    "newPhotoUrl": {
+      "type": "text"
+    },
+    "reason": {
+      "type": "text",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Approved",
+        "Rejected"
+      ],
+      "default": "Pending"
+    },
+    "adminRemarks": {
+      "type": "text"
+    },
+    "reviewedBy": {
+      "type": "string"
+    },
+    "submittedDate": {
+      "type": "string",
+      "required": true
+    },
+    "reviewedDate": {
+      "type": "string"
+    }
+  }
+}

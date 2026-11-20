@@ -1486,6 +1486,55 @@ export interface ApiSupervisorSupervisor extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiWorkerProfileCorrectionWorkerProfileCorrection
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'worker_profile_corrections';
+  info: {
+    description: 'Worker personal details and profile photo correction requests for Admin approval';
+    displayName: 'Worker Profile Correction';
+    pluralName: 'worker-profile-corrections';
+    singularName: 'worker-profile-correction';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    adminRemarks: Schema.Attribute.Text;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    fieldLabel: Schema.Attribute.String;
+    fieldName: Schema.Attribute.String & Schema.Attribute.Required;
+    isPhotoChange: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::worker-profile-correction.worker-profile-correction'
+    > &
+      Schema.Attribute.Private;
+    newPhotoUrl: Schema.Attribute.Text;
+    newValue: Schema.Attribute.Text;
+    oldPhotoUrl: Schema.Attribute.Text;
+    oldValue: Schema.Attribute.Text;
+    project: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    reason: Schema.Attribute.Text & Schema.Attribute.Required;
+    reviewedBy: Schema.Attribute.String;
+    reviewedDate: Schema.Attribute.String;
+    site: Schema.Attribute.String;
+    status: Schema.Attribute.Enumeration<['Pending', 'Approved', 'Rejected']> &
+      Schema.Attribute.DefaultTo<'Pending'>;
+    submittedDate: Schema.Attribute.String & Schema.Attribute.Required;
+    supervisorName: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    workerCode: Schema.Attribute.String & Schema.Attribute.Required;
+    workerId: Schema.Attribute.String & Schema.Attribute.Required;
+    workerName: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface ApiWorkerSiteWorkerSite extends Struct.SingleTypeSchema {
   collectionName: 'worker_sites';
   info: {
@@ -2155,6 +2204,7 @@ declare module '@strapi/strapi' {
       'api::supervisor-request.supervisor-request': ApiSupervisorRequestSupervisorRequest;
       'api::supervisor-site.supervisor-site': ApiSupervisorSiteSupervisorSite;
       'api::supervisor.supervisor': ApiSupervisorSupervisor;
+      'api::worker-profile-correction.worker-profile-correction': ApiWorkerProfileCorrectionWorkerProfileCorrection;
       'api::worker-site.worker-site': ApiWorkerSiteWorkerSite;
       'api::worker.worker': ApiWorkerWorker;
       'plugin::content-releases.release': PluginContentReleasesRelease;
