@@ -1529,6 +1529,8 @@ export interface ApiWorkerProfileCorrectionWorkerProfileCorrection
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    userRole: Schema.Attribute.Enumeration<['Worker', 'Supervisor']> &
+      Schema.Attribute.DefaultTo<'Worker'>;
     workerCode: Schema.Attribute.String & Schema.Attribute.Required;
     workerId: Schema.Attribute.String & Schema.Attribute.Required;
     workerName: Schema.Attribute.String & Schema.Attribute.Required;
